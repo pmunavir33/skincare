@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "kopee_shop/manage.py",
+      "src": "kopee_shop/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "kopee_shop/manage.py"
+      "dest": "kopee_shop/wsgi.py"
     }
   ]
 }
